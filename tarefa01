@@ -1,0 +1,29 @@
+INDICE = 13
+SOMA = 0
+K = 0
+
+while K < INDICE:
+    K = K + 1
+    SOMA = SOMA + K
+
+print(SOMA)
+
+
+
+# Aqui está o que o código faz:
+
+# Começo: Você começa com 0 blocos (SOMA = 0) e uma variável para contar (K = 0).
+# Adicionar Blocos: Enquanto o número de blocos adicionados (K) for menor que 13 (INDICE), você continua adicionando blocos.
+# Contagem: Cada vez que você adiciona um bloco, você aumenta a contagem de blocos adicionados (K) em 1 e adiciona esse número ao total (SOMA).
+# Vamos ver isso passo a passo:
+
+# Passo 1: K = 0, SOMA = 0
+# Passo 2: Adiciona 1 bloco. K = 1, SOMA = 1
+# Passo 3: Adiciona 1 bloco. K = 2, SOMA = 3 (1 + 2)
+# Passo 4: Adiciona 1 bloco. K = 3, SOMA = 6 (3 + 3)
+# E assim por diante…
+# Você continua até adicionar o 13º bloco:
+
+# Último Passo: K = 13, SOMA = 91 (soma de todos os números de 1 a 13)
+# No final, você terá 91 blocos no total. É como contar blocos um por um e somar o total enquanto você vai adicionando
+
