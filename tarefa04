@@ -1,0 +1,24 @@
+# Valores de faturamento por estado
+faturamento = {
+    "SP": 67836.43,
+    "RJ": 36678.66,
+    "MG": 29229.88,
+    "ES": 27165.48,
+    "Outros": 19849.53
+}
+
+# Calcular o faturamento total
+faturamento_total = sum(faturamento.values())
+
+# Calcular o percentual de representação de cada estado
+percentuais = {estado: (valor / faturamento_total) * 100 for estado, valor in faturamento.items()}
+
+# Exibir os resultados
+for estado, percentual in percentuais.items():
+    print(f"{estado}: {percentual:.2f}%")
+
+
+# Dicionário de Faturamento: Os valores de faturamento para cada estado são armazenados em um dicionário chamado faturamento.
+# Cálculo do Faturamento Total: Usei a função sum para somar todos os valores do dicionário e obter o faturamento total.
+# Cálculo dos Percentuais: Usei uma compreensão de dicionário para calcular o percentual de representação de cada estado. Dividindo o valor de faturamento de cada estado pelo faturamento total e multipliquei por 100.
+# Exibição dos Resultados: Itero sobre o dicionário de percentuais e imprimo o percentual de cada estado formatado com duas casas decimais.
