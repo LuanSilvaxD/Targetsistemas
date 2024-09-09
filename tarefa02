@@ -1,0 +1,30 @@
+def fibonacci_sequence(max_value):
+    sequence = [0, 1]
+    while sequence[-1] < max_value:
+        next_value = sequence[-1] + sequence[-2]
+        sequence.append(next_value)
+    return sequence
+
+def is_fibonacci_number(number):
+    sequence = fibonacci_sequence(number)
+    if number in sequence:
+        return f"O número {number} pertence à sequência de Fibonacci."
+    else:
+        return f"O número {number} não pertence à sequência de Fibonacci."
+
+# Exemplo de uso
+numero = int(input("Informe um número: "))
+resultado = is_fibonacci_number(numero)
+print(resultado)
+
+
+
+# Gerar a sequência:
+# Começamos com [0, 1].
+# Continuamos adicionando números até que o último número seja maior ou igual ao número informado.
+# Verificar o número:
+# Se o número informado estiver na lista, ele pertence à sequência.
+# Caso contrário, ele não pertence.
+
+# Se você informar o número 8, o programa vai gerar a sequência [0, 1, 1, 2, 3, 5, 8] e vai dizer que 8 pertence à sequência.
+# Se você informar o número 7, o programa vai gerar a mesma sequência e vai dizer que 7 não pertence à sequência.
